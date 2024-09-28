@@ -67,7 +67,7 @@ function adjustModelScale(width) {
         model.scale.set((5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor); // Масштабувати модель
 
         if (width < 820) {
-            model.position.y = +0.6;
+            model.position.y = -0.65;
         } else {
             model.position.y = -1.3;
         }
