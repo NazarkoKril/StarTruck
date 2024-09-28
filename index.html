@@ -153,7 +153,7 @@
                 <h2 class="title">Наші Послуги</h2>
                 <div class="grid2">
                     <div class="gridl">
-                        <img src="./img/MASK.png" alt="photo">
+                        <div id="modelContainer"></div>
                     </div>
                     <div class="gridr">
                         <ul class="serv_list">
@@ -413,7 +413,13 @@
         <section class="sect6" id="map_sect">
             <div class="container">
                 <h3 class="title">як дістатися?</h3>
-                <div id="map" style="width: 100%; height: 650px;"></div>
+                <div class="map" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7286.118579424981!2d23.94398564380386!3d49.78546450899456!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1727528989078!5m2!1sru!2sua"
+                        width="100%" height="100%" style="border:0;filter:invert(80%) hue-rotate(180deg) brightness(0.8) contrast(1.1);
+                                    " loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
 
 
                 <div class="grid2">
@@ -516,12 +522,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/index.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVQvkEMemmT7MapUK1QOmrJWmM2tiCTrM&callback=initMap">
-        </script>
+    <script src="./js/3dmodel.js"></script>
 
 
 </body>
