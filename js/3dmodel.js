@@ -28,15 +28,15 @@ function init() {
 
             model.traverse((child) => {
                 if (child.isMesh) {
-                    child.material.metalness = 0.8;
+                    child.material.metalness = 0.7;
                     child.material.roughness = 0.3;
                     child.material.needsUpdate = true;
                 }
             });
 
             scene.add(model);
-            adjustModelScale(window.innerWidth); // Виклик для початкового масштабування
-            model.position.y -= 1.3; // Регулювання позиції моделі
+            adjustModelScale(window.innerWidth);
+            model.position.y -= 1.3;
             camera.lookAt(0, 0, 0);
 
             if (gltf.animations && gltf.animations.length) {
@@ -66,11 +66,10 @@ function adjustModelScale(width) {
         const maxDim = Math.max(size.x, size.y, size.z);
         model.scale.set((5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor); // Масштабувати модель
 
-        // Встановлення позиції моделі в залежності від ширини екрана
         if (width < 820) {
-            model.position.y = +0.5; // Для екранів менше 820 пікселів
+            model.position.y = +0.6;
         } else {
-            model.position.y = -1.3; // Для екранів більше 820 пікселів
+            model.position.y = -1.3;
         }
     }
 }
