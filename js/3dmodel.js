@@ -36,7 +36,7 @@ function init() {
 
             scene.add(model);
             adjustModelScale(window.innerWidth);
-            model.position.y -= 1.3;
+            adjustModelPosition(window.innerWidth);
             camera.lookAt(0, 0, 0);
 
             if (gltf.animations && gltf.animations.length) {
@@ -59,13 +59,17 @@ function init() {
 }
 
 function adjustModelScale(width) {
-    const scaleFactor = width < 250 ? 0.2 : (width < 500 ? 0.4 : (width <= 820 ? 0.5 : (width <= 1024 ? 0.8 : 1))); // Визначити коефіцієнт масштабування
+    const scaleFactor = width < 250 ? 0.2 : (width < 500 ? 0.4 : (width <= 820 ? 0.5 : (width <= 1024 ? 0.8 : 1)));
     if (model) {
         const box = new THREE.Box3().setFromObject(model);
         const size = box.getSize(new THREE.Vector3());
         const maxDim = Math.max(size.x, size.y, size.z);
-        model.scale.set((5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor); // Масштабувати модель
+        model.scale.set((5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor, (5 / maxDim) * scaleFactor);
+    }
+}
 
+function adjustModelPosition(width) {
+    if (model) {
         if (width < 820) {
             model.position.y = -0.65;
         } else {
@@ -74,13 +78,13 @@ function adjustModelScale(width) {
     }
 }
 
-
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 
     adjustModelScale(window.innerWidth);
+    adjustModelPosition(window.innerWidth);
 }
 
 function animate() {
