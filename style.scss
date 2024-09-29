@@ -923,7 +923,6 @@ footer {
     gap: 40px;
   }
   .gridl #modelContainer {
-    zoom: 0.8;
     width: 100% !important;
     margin-right: auto;
     margin-left: auto;
@@ -1026,7 +1025,7 @@ footer {
   width: 100%;
   height: auto;
   canvas {
-    width: 130% !important;
+    width: 100% !important;
     height: auto !important;
   }
 }

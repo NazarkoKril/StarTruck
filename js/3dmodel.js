@@ -38,7 +38,7 @@ function init() {
             adjustModelScale(window.innerWidth);
             adjustModelPosition(window.innerWidth);
             camera.lookAt(0, 0, 0);
-
+            model.position.y = -1.3;
             if (gltf.animations && gltf.animations.length) {
                 mixer = new THREE.AnimationMixer(model);
                 const action = mixer.clipAction(gltf.animations[0]);
@@ -72,12 +72,7 @@ function adjustModelPosition(width) {
     if (model) {
         if (width < 820) {
             model.position.y = -0.65;
-            renderer.domElement.style.position = 'absolute';
-            // renderer.domElement.style.top = '0';
-            renderer.domElement.style.left = '0';
-            renderer.domElement.style.width = '100%';
-            // renderer.domElement.style.height = '100%';
-            renderer.domElement.style.zIndex = '-1';
+
             function updateRendererSize() {
                 renderer.setSize(window.innerWidth, window.innerHeight);
                 camera.aspect = window.innerWidth / window.innerHeight;
@@ -86,7 +81,7 @@ function adjustModelPosition(width) {
             window.addEventListener('load', updateRendererSize);
             window.addEventListener('resize', updateRendererSize);
         } else {
-            model.position.y = -1.3;
+
         }
     }
 }
