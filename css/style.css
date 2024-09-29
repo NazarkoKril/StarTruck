@@ -1058,4 +1058,10 @@ footer {
 #modelContainer canvas {
   width: 100% !important;
   height: auto !important;
+}
+
+@media (max-width: 820px) {
+  canvas {
+    display: none !important;
+  }
 }/*# sourceMappingURL=style.css.map */
