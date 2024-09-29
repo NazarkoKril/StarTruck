@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- treejs -->
+    <script>
+        if (window.innerWidth > 820) {
+            let script1 = document.createElement('script');
+            script1.src = './js/3dmodel.js';
+            document.head.appendChild(script1);
+
+            let script2 = document.createElement('script');
+            script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+            document.head.appendChild(script2);
+
+            let script3 = document.createElement('script');
+            script3.src = 'https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js';
+            document.head.appendChild(script3);
+        }
+    </script>
+
+
+
+    <title>StarTruck</title>
+</head>
+
+<body>
+    <header>
+        <div class="container_h">
+            <div class="header__container">
+                <div class="h__left">
+                    <a href="./"><img loading="lazy" src="./img/logo.svg" alt="logo photo"></a>
+
+                </div>
+                <div class="h__center">
+                    <ul class="header__list mob">
+                        <li class="header__item">
+                            <a href="./about-us.html" class="header__link">про нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./#serv" class="header__link">Послуги</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./product.html" class="header__link">товари</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./blog.html" class="header__link">блог</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./contanct.html" class="header__link">контакти</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#map_sect" class="header__link">як дістатися?</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./" class="header__link">Особистий кабінет</a>
+                        </li>
+
+
+
+                    </ul>
+                    <div class="head_box">
+                        <div class="header__item lang">
+                            <a href="javascript:void(0)" class="header__link language-selector">UA</a>
+                            <ul class="language-dropdown">
+                                <li><a href="javascript:void(0)" class="language-option header__link"
+                                        data-lang="PL">PL</a></li>
+                                <li><a href="javascript:void(0)" class="language-option header__link"
+                                        data-lang="EN">EN</a></li>
+                            </ul>
+                        </div>
+                        <div class="burger">
+                            <div class="burger__icon">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
+                            <div class="burger__menu">
+                                <div class="container">
+                                    <ul class="header__list">
+                                        <li class="header__item">
+                                            <a href="./about-us.html" class="header__link">про нас</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="./#serv" class="header__link">Послуги</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="./product.html" class="header__link">товари</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="./blog.html" class="header__link">блог</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="./contanct.html" class="header__link">контакти</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="#map_sect" class="header__link">як дістатися?</a>
+                                        </li>
+                                        <li class="header__item">
+                                            <a href="./" class="header__link">Особистий кабінет</a>
+                                        </li>
+
+                                        <li><a href="./" class="btn bottom">Записатися</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="./" class="btn mob">Записатися</a>
+                </div>
+
+            </div>
+            <div id="overlay" class="overlay_half"></div>
+        </div>
+    </header>
+    <main>
+        <section class="hero1">
+            <div class="container">
+                <img src="./img/title.svg" alt="photo">
+            </div>
+        </section>
+        <section class="sect_about">
+            <div class="container">
+                <div class="grid2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <img src="./img/about.png" alt="photo 2 man" loading="lazy">
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h2 class="title">наша команда</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <ul class="grid5">
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                    <li>
+                        <div class="team_image"><img src="./img/profile.png" alt="photo teammate" loading="lazy"></div>
+                        <h4>Прізвище Ім’я</h4>
+                        <h5>Посада</h5>
+                    </li>
+                </ul>
+                <a href="./work.html" class="btn">Працевлаштування</a>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container_h">
+                <ul class="grid3">
+                    <li><img src="./img/gal1.png" alt="photo" loading="lazy"></li>
+                    <li><img src="./img/gal1.png" alt="photo" loading="lazy"></li>
+                    <li><img src="./img/gal1.png" alt="photo" loading="lazy"></li>
+                </ul>
+                <ul class="grid2">
+                    <li><img src="./img/gal2.png" alt="photo" loading="lazy"></li>
+                    <li><img src="./img/gal2.png" alt="photo" loading="lazy"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="sect6" id="map_sect">
+            <div class="container">
+                <h3 class="title">як дістатися?</h3>
+                <div class="map" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7286.118579424981!2d23.94398564380386!3d49.78546450899456!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1727528989078!5m2!1sru!2sua"
+                        width="100%" height="100%" style="border:0;filter:invert(80%) hue-rotate(180deg) brightness(0.8) contrast(1.1);
+                                            " loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+
+                <div class="grid2">
+                    <div class="video">
+                        <video width="100%" preload="metadata" controlsList="nodownload" height="370" controls
+                            poster="./img/video_img.png" loading="lazy">
+                            <source src="./img/video.mp4" type="video/mp4">
+                            Ваш браузер не підтримує відтворення відео.
+                        </video>
+                    </div>
+                    <div class="gridr">
+                        <h3>наша адреса:</h3>
+                        <p>81300 Львівська обл. Львівський р-н с. Сокільники <br>
+                            вул. івана мазепи, 57 <br> Пн-Пт 8:00-18:00 <br> Сб 8:00-14:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container_h">
+            <div class="footer">
+                <div class="footer_l">
+                    <a href="./">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="165" height="112" viewBox="0 0 165 112"
+                            fill="none">
+                            <path
+                                d="M20.6168 30.4568C20.4396 28.0808 20.6784 25.5189 21.3849 22.8495C23.0268 16.6437 26.8745 11.0246 31.7733 6.95902C36.6696 2.89079 42.6146 0.375977 48.4464 0.375977H86.0366C87.6416 0.375977 88.5771 1.76174 88.1241 3.46972L83.6414 20.4237C83.1909 22.1317 81.5218 23.5175 79.9168 23.5175H46.2235C44.419 23.5175 42.5432 25.0761 42.0361 26.9963C41.5561 28.8038 42.4595 30.2865 44.067 30.4568H20.6168Z"
+                                fill="white" />
+                            <path
+                                d="M106.417 42.4888L104.709 48.9566C104.477 49.8237 103.63 50.5284 102.816 50.5284H94.5664C93.7467 50.5284 92.8949 51.2357 92.6635 52.108L89.6381 63.5478C89.4017 64.4463 89.8941 65.1719 90.736 65.1719H98.5199C99.3372 65.1719 99.8123 65.8766 99.5834 66.7489L97.8749 73.2062C97.646 74.0785 96.7967 74.7832 95.977 74.7832H80.3279C76.1233 74.7832 73.6739 71.1577 74.858 66.6834L78.7106 52.108C78.942 51.2357 78.4644 50.5284 77.6447 50.5284H77.4797C76.3227 50.5284 75.3183 51.3588 75.0057 52.5455C75.0032 52.5507 75.0032 52.5585 75.0008 52.5638C73.3884 58.6648 69.6047 64.1869 64.7921 68.1818C59.977 72.1793 54.1329 74.6522 48.4021 74.6522H2.2279C0.622873 74.6522 -0.312574 73.2665 0.14038 71.5585L4.62314 54.6045C5.07363 52.8965 6.74267 51.5107 8.3477 51.5107H50.625C52.23 51.5107 53.8991 50.1249 54.3495 48.417C54.4259 48.1262 54.4628 47.8433 54.4628 47.5761C54.4628 46.3449 53.6824 45.4228 52.4639 45.3311H67.4187C68.2508 45.3311 69.1124 44.6159 69.3462 43.7331L71.611 35.1487C72.7557 36.3642 73.6887 37.7893 74.3829 39.3794C74.7965 40.3277 75.7073 40.9171 76.692 40.9171H80.1851C81.0049 40.9171 81.8566 40.2098 82.088 39.3375L86.4058 25.1157C86.6372 24.2355 87.4964 23.5229 88.3211 23.5229H99.283C100.108 23.5229 100.59 24.2355 100.359 25.1157L96.041 39.3375C95.8096 40.2098 96.2871 40.9171 97.1069 40.9171H105.356C106.171 40.9171 106.648 41.6217 106.417 42.4888Z"
+                                fill="white" />
+                            <path
+                                d="M66.786 78.6731L64.6025 86.93C64.4646 87.4487 64.0979 87.9334 63.6178 88.2267L50.044 95.1844C49.5664 95.4778 49.1972 95.9624 49.0593 96.4811L45.5415 109.791C45.3101 110.669 44.451 111.381 43.6263 111.381H37.5828C36.7582 111.381 36.2757 110.669 36.5095 109.791L44.5938 79.2153C44.8252 78.3378 45.6843 77.6253 46.509 77.6253H52.5525C53.3771 77.6253 53.8596 78.3378 53.6258 79.2153L52.6017 83.0871C52.4909 83.5089 52.8577 83.7656 53.254 83.5429C56.1564 81.8978 62.6085 79.4328 65.5109 77.785C66.2838 77.3476 67.0027 77.8505 66.786 78.6731Z"
+                                fill="#004B70" />
+                            <path
+                                d="M97.7543 79.1999L89.6627 109.805C89.4338 110.674 88.5845 111.379 87.7647 111.379H64.1792C63.3619 111.379 62.8843 110.674 63.1157 109.805L71.2073 79.1999C71.4363 78.3302 72.2855 77.6255 73.1053 77.6255H79.1759C79.9931 77.6255 80.4707 78.3302 80.2393 79.1999L74.6882 100.193C74.4592 101.063 74.9343 101.768 75.7516 101.768H81.2732C82.0905 101.768 82.9398 101.063 83.1712 100.193L88.7223 79.1999C88.9513 78.3302 89.8006 77.6255 90.6203 77.6255H96.6909C97.5082 77.6255 97.9833 78.3302 97.7543 79.1999Z"
+                                fill="#004B70" />
+                            <path
+                                d="M109.157 89.2402L106.218 100.36C105.984 101.248 106.469 101.971 107.306 101.971H120.119C120.954 101.971 121.441 102.692 121.207 103.583L119.518 109.974C119.284 110.862 118.416 111.585 117.581 111.585H95.7358C94.9013 111.585 94.4139 110.865 94.6477 109.974L102.67 79.6315C102.904 78.7435 103.773 78.0205 104.608 78.0205H126.453C127.287 78.0205 127.775 78.7409 127.541 79.6315L125.852 86.0234C125.618 86.9114 124.749 87.6344 123.915 87.6344H111.102C110.26 87.6292 109.391 88.3496 109.157 89.2402Z"
+                                fill="#004B70" />
+                            <path
+                                d="M131.352 65.52C129.601 65.3366 128.299 64.7262 127.285 63.537C127.034 63.2436 126.967 62.8035 127.088 62.3477L131.667 45.0295C132.282 42.7033 131.009 40.8198 128.823 40.8198H114.147C111.963 40.8198 109.696 42.7033 109.081 45.0269L102.321 70.5994C101.705 72.9256 102.978 74.8091 105.164 74.8091H119.838C121.16 74.8091 122.512 74.1201 123.509 73.0618C123.725 72.8339 124.04 72.7894 124.213 72.9518C125.407 74.0782 126.879 74.555 128.676 74.7357C129.237 74.7907 129.865 74.3114 130.03 73.6958C130.707 71.1914 131.275 69.0879 131.955 66.5678C132.1 66.0308 131.841 65.5724 131.352 65.52ZM123.853 56.8046L120.34 59.6652C120.193 59.7857 120.094 59.956 120.077 60.1263L119.661 64.1657C119.617 64.59 119.112 64.9149 118.807 64.7158L115.902 62.8087C115.781 62.7301 115.609 62.7301 115.447 62.8087L111.535 64.7158C111.124 64.9175 110.789 64.5927 110.971 64.1657L112.689 60.1263C112.761 59.956 112.753 59.7857 112.67 59.6652L110.668 56.8046C110.457 56.5033 110.757 55.9794 111.175 55.9166L115.141 55.3272C115.306 55.3036 115.474 55.1962 115.584 55.0416L118.26 51.3663C118.541 50.9786 119.06 50.9786 119.139 51.3663L119.873 55.0416C119.902 55.1962 120.013 55.301 120.166 55.3272L123.821 55.9166C124.2 55.9794 124.222 56.5033 123.853 56.8046Z"
+                                fill="white" />
+                            <path
+                                d="M9.40376 109.784C9.1699 110.666 9.65485 111.382 10.4844 111.382H29.2254C30.055 111.382 30.9166 110.666 31.1504 109.784L40.9259 74.6548H19.1792L9.40376 109.784Z"
+                                fill="#004B70" />
+                            <path
+                                d="M48.6384 46.9313C48.8723 46.0485 49.7339 45.3334 50.5635 45.3334H67.4188C68.2484 45.3334 69.11 44.6182 69.3438 43.7354L72.4234 32.0599C72.6573 31.1771 72.1723 30.4619 71.3427 30.4619H12.8822C12.0526 30.4619 11.191 31.1771 10.9571 32.0599L7.87754 43.7354C7.64368 44.6182 8.12864 45.3334 8.95823 45.3334H25.8135C26.6431 45.3334 27.1281 46.0485 26.8942 46.9313L25.619 51.513H47.3657"
+                                fill="#004B70" />
+                            <path
+                                d="M157.084 77.4807L154.844 85.4915C154.745 85.8346 154.45 86.1752 154.169 86.3664L139.978 93.9501C139.53 94.2593 139.416 94.9037 139.731 95.3621L149.669 109.838C150.117 110.493 149.677 111.41 148.916 111.407L141.858 111.368C141.41 111.365 140.992 111.132 140.728 110.744L135.844 104.153C135.616 103.818 135.126 103.91 135.02 104.311L133.454 110.283C133.284 110.925 132.733 111.37 132.108 111.37H125.983C125.057 111.37 124.393 110.365 124.639 109.482L134.225 73.2737C134.057 74.1067 134.532 74.7616 135.33 74.7616H141.408C142.215 74.7616 143.055 74.0857 143.313 73.2344L140.662 82.9819C140.549 83.4167 140.994 83.773 141.351 83.5372L155.71 76.3622C156.434 75.8854 157.325 76.6137 157.084 77.4807Z"
+                                fill="#004B70" />
+                            <path
+                                d="M164.705 41.86L162.509 50.1668C162.372 50.6881 162.002 51.1753 161.52 51.4713L147.865 58.4709C147.382 58.7669 147.013 59.2541 146.875 59.7754L143.335 73.1642C143.101 74.047 142.24 74.7647 141.408 74.7647H135.33C134.5 74.7647 134.015 74.0496 134.249 73.1642L142.38 42.4049C142.614 41.5221 143.476 40.8043 144.308 40.8043H150.386C151.215 40.8043 151.7 41.5195 151.466 42.4049L150.437 46.3002C150.324 46.7246 150.696 46.9839 151.095 46.7587C154.014 45.1031 160.506 42.6223 163.425 40.9667C164.201 40.5266 164.924 41.0322 164.705 41.86Z"
+                                fill="white" />
+                            <path
+                                d="M143.313 73.2357L143.409 72.8794L143.335 73.1623C143.328 73.1859 143.323 73.2121 143.313 73.2357Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <p>StarTruck спеціалізується на ремонті та обслуговуванні комерційної техніки. Наша мета –
+                        забезпечити
+                        якісний та надійний
+                        ремонт і ваш транспортний засіб буде завжди готовий до виконання поставленої перед ним роботи
+                    </p>
+                </div>
+
+                <div class="footer_r">
+                    <ul class="footer_list">
+                        <li class="header__item">
+                            <a href="./about-us.html" class="header__link">про нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#serv" class="header__link">Послуги</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./product.html" class="header__link">товари</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./blog.html" class="header__link">блог</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./contanct.html" class="header__link">контакти</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./work.html" class="header__link">працевлаштування</a>
+                        </li>
+                    </ul>
+                    <p>81300 Львівська обл. Львівський р-н с. Сокільники <br>
+                        вул. івана мазепи, 57 <br>Пн-Пт 8:00-18:00 <br>Сб 8:00-14:00</p>
+                    <div class="box">
+                        <a class="header__link" href="mailto:startruck.com.ua@gmail.com">startruck.com.ua@gmail.com</a>
+                        <span>
+                            <p>Подзвоніть нам:</p>
+                            <a class="header__link" href="tel:+380960031122">+38 (096) 003-11-22</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>
