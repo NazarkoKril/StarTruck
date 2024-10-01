@@ -109,11 +109,15 @@ header.scrolled {
     color: var(--color_purple);
   }
 }
+.no_active {
+  color: var(--color_purple) !important;
+  border-bottom: 1px solid var(--color_purple) !important;
+}
 .header__link:not(.no_active)::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: -1px;
   width: 0;
   height: 1px;
   background-color: var(--color_purple);
