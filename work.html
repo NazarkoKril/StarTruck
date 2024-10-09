@@ -41,7 +41,7 @@ height: 100vh;">
                             <a href="./product.html" class="header__link">товари</a>
                         </li>
                         <li class="header__item">
-                            <a href="./blog.html" class="header__link no_active">блог</a>
+                            <a href="./blog.html" class="header__link">блог</a>
                         </li>
                         <li class="header__item">
                             <a href="./contanct.html" class="header__link">контакти</a>
@@ -113,7 +113,7 @@ height: 100vh;">
         </div>
     </header>
     <main>
-        <section class="sect_blog">
+        <section class="sect_work">
             <svg xmlns="http://www.w3.org/2000/svg" class="bc_wheel wheel1" width="737" height="837"
                 viewBox="0 0 737 837" fill="none">
                 <path
@@ -127,144 +127,76 @@ height: 100vh;">
                     fill="black" fill-opacity="0.25" />
             </svg>
             <div class="container">
-                <div class="link">
-                    <a href="./">головна</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
-                        <path
-                            d="M10.2096 5.45962C10.4635 5.20578 10.4635 4.79422 10.2096 4.54038L6.07304 0.403806C5.8192 0.149965 5.40765 0.149965 5.15381 0.403806C4.89996 0.657647 4.89996 1.0692 5.15381 1.32304L8.83076 5L5.15381 8.67696C4.89996 8.9308 4.89996 9.34235 5.15381 9.59619C5.40765 9.85004 5.8192 9.85004 6.07304 9.59619L10.2096 5.45962ZM0 5.65H9.75V4.35H0V5.65Z"
-                            fill="white" />
-                    </svg>
-                    <a href="./blog.html">блог</a>
-                </div>
-                <h2>Блог</h2>
-                <ul class="grid3">
-                    <li>
-                        <div class="images">
-                            <img src="./img/gal1.png" alt="photo blog">
-                        </div>
-                        <div class="content">
-                            <div class="top">
-                                <h3>Назва новини</h3>
-                                <h4>30.04</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                            <a class="btn" href="./blog-card.html">Читати</a>
 
+                <h2>Ваша анкета</h2>
+                <form action="" id="form_work" class="form_work">
+                    <div class="box">
+                        <div class="input">
+                            <label for="name">Ім’я</label>
+                            <input type="text" required placeholder="Введіть ваше ім’я">
                         </div>
-                    </li>
-                    <li>
-                        <div class="images">
-                            <img src="./img/gal1.png" alt="photo blog">
+                        <div class="input">
+                            <label for="name">Прізвище</label>
+                            <input type="text" required placeholder="Введіть ваше прізвище">
                         </div>
-                        <div class="content">
-                            <div class="top">
-                                <h3>Назва новини</h3>
-                                <h4>30.04</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                            <a class="btn" href="./blog-card.html">Читати</a>
-
+                    </div>
+                    <div class="box">
+                        <div class="input">
+                            <label for="name">Пошта</label>
+                            <input type="email" required placeholder="Введіть вашу електронну пошту">
                         </div>
-                    </li>
-                    <li>
-                        <div class="images">
-                            <img src="./img/gal1.png" alt="photo blog">
+                        <div class="input">
+                            <label for="name">Номер телефону</label>
+                            <input type="tel" required placeholder="Введіть ваш номер телефону">
                         </div>
-                        <div class="content">
-                            <div class="top">
-                                <h3>Назва новини</h3>
-                                <h4>30.04</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                            <a class="btn" href="./blog-card.html">Читати</a>
-
+                    </div>
+                    <div class="box">
+                        <div class="input">
+                            <label for="name">Область</label>
+                            <input type="text" required placeholder="Введіть область">
                         </div>
-                    </li>
-                    <li>
-                        <div class="images">
-                            <img src="./img/gal1.png" alt="photo blog">
+                        <div class="input">
+                            <label for="name">Місто</label>
+                            <input type="text" required placeholder="Введіть місто">
                         </div>
-                        <div class="content">
-                            <div class="top">
-                                <h3>Назва новини</h3>
-                                <h4>30.04</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                            <a class="btn" href="./blog-card.html">Читати</a>
-
+                    </div>
+                    <div class="input">
+                        <label for="name">Адреса</label>
+                        <input type="text" required placeholder="Введіть вашу адресу">
+                    </div>
+                    <div class="input">
+                        <label for="name">Бажана посада</label>
+                        <input type="text" required placeholder="Введіть бажану посаду">
+                    </div>
+                    <div class="file-upload">
+                        <label for="resumeUpload">Резюме (За наявності)</label>
+                        <div class="upload-section">
+                            <input type="file" id="resumeUpload" name="resume" style="display: none;"
+                                accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" onchange="handleFileUpload()">
+                            <button class="upload" type="button"
+                                onclick="document.getElementById('resumeUpload').click()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                    fill="none">
+                                    <path d="M7.125 8.70837V13.4584L8.70833 11.875" stroke="white" stroke-width="1.1875"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.12533 13.4583L5.54199 11.875" stroke="white" stroke-width="1.1875"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M17.4163 7.91671V11.875C17.4163 15.8334 15.833 17.4167 11.8747 17.4167H7.12467C3.16634 17.4167 1.58301 15.8334 1.58301 11.875V7.12504C1.58301 3.16671 3.16634 1.58337 7.12467 1.58337H11.083"
+                                        stroke="white" stroke-width="1.1875" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.4163 7.91671H14.2497C11.8747 7.91671 11.083 7.12504 11.083 4.75004V1.58337L17.4163 7.91671Z"
+                                        stroke="white" stroke-width="1.1875" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p>Завантажити</p>
+                            </button>
                         </div>
-                    </li>
-                    <li>
-                        <div class="images">
-                            <img src="./img/gal1.png" alt="photo blog">
-                        </div>
-                        <div class="content">
-                            <div class="top">
-                                <h3>Назва новини</h3>
-                                <h4>30.04</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                            <a class="btn" href="./blog-card.html">Читати</a>
-
-                        </div>
-                    </li>
-                    <li>
-                        <div class="images">
-                            <img src="./img/gal1.png" alt="photo blog">
-                        </div>
-                        <div class="content">
-                            <div class="top">
-                                <h3>Назва новини</h3>
-                                <h4>30.04</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.</p>
-                            <a class="btn" href="./blog-card.html">Читати</a>
-
-                        </div>
-                    </li>
-                </ul>
+                        <div id="fileInfo"></div>
+                    </div>
+                    <button class="sub_work btn" type="submit">Зберегти та відправити</button>
+                </form>
             </div>
         </section>
     </main>
@@ -335,7 +267,7 @@ height: 100vh;">
                             <a href="./contanct.html" class="header__link">контакти</a>
                         </li>
                         <li class="header__item">
-                            <a href="./work.html" class="header__link">працевлаштування</a>
+                            <a href="./work.html" class="header__link no_active">працевлаштування</a>
                         </li>
                     </ul>
                     <p>81300 Львівська обл. Львівський р-н с. Сокільники <br>
@@ -371,7 +303,53 @@ height: 100vh;">
     </footer>
 
     <script src="./js/script.js"></script>
+    <script>
+        function handleFileUpload() {
+            const input = document.getElementById('resumeUpload');
+            const fileInfo = document.getElementById('fileInfo');
 
+            fileInfo.innerHTML = '';
+
+            if (input.files.length > 0) {
+                const file = input.files[0];
+                const fileType = file.type;
+                const fileURL = URL.createObjectURL(file);
+
+                let icon = '';
+                if (fileType.includes('pdf')) {
+                    icon = '<img src="https://img.icons8.com/color/48/000000/pdf.png" alt="PDF Icon">';
+                } else if (fileType.includes('word')) {
+                    icon = '<img src="https://img.icons8.com/color/48/000000/ms-word.png" alt="Word Icon">';
+                } else if (fileType.includes('excel')) {
+                    icon = '<img src="https://img.icons8.com/color/48/000000/ms-excel.png" alt="Excel Icon">';
+                } else if (fileType.includes('image')) {
+                    icon = '<img src="https://img.icons8.com/color/48/000000/image.png" alt="Image Icon">';
+                } else {
+                    alert('Неприпустимий формат файлу!');
+                    return;
+                }
+                const fileDetails = `
+         <div class="box box_gap">
+            <a href="${fileURL}" target="_blank">${icon}</a>
+            <h5>Файл: ${file.name}</h5>
+               </div>
+            <button type="button" class="upload" onclick="removeFile()">
+                <svg class="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z" fill="#fff" /></svg>
+               <p>Видалити</p>
+                </button>
+        `;
+                fileInfo.innerHTML = fileDetails;
+            }
+        }
+
+        function removeFile() {
+            document.getElementById('resumeUpload').value = "";
+            document.getElementById('fileInfo').innerHTML = "";
+        }
+
+
+    </script>
 
 
 </body>
