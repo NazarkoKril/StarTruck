@@ -18,11 +18,7 @@
     <title>StarTruck</title>
 </head>
 
-<body style="display: flex;
-flex-direction: column;
-justify-content: space-between;
-height: 100vh;
-background: #FFF;">
+<body>
     <header style=" background-color: rgba(0, 0, 0, 0.8);">
         <div class="container_h">
             <div class="header__container">
@@ -114,9 +110,8 @@ background: #FFF;">
         </div>
     </header>
     <main style="background: linear-gradient(90deg, rgba(108,172,228,1) 0%, rgba(255,255,255,1) 100%); height: 100%;
-    display: flex;flex-direction: column;
-justify-content: center;">
-        <section class="sect_card">
+   ">
+        <section class="sect_card product_card">
             <svg xmlns="http://www.w3.org/2000/svg" class="bc_wheel wheel1" width="737" height="837"
                 viewBox="0 0 737 837" fill="none">
                 <path
@@ -131,18 +126,18 @@ justify-content: center;">
             </svg>
             <div class="container">
                 <div class="link">
-                    <a href="./blog.html">Блог</a>
+                    <a href="./product.html">товари</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
                         <path
                             d="M10.2096 5.45962C10.4635 5.20578 10.4635 4.79422 10.2096 4.54038L6.07304 0.403806C5.8192 0.149965 5.40765 0.149965 5.15381 0.403806C4.89996 0.657647 4.89996 1.0692 5.15381 1.32304L8.83076 5L5.15381 8.67696C4.89996 8.9308 4.89996 9.34235 5.15381 9.59619C5.40765 9.85004 5.8192 9.85004 6.07304 9.59619L10.2096 5.45962ZM0 5.65H9.75V4.35H0V5.65Z"
                             fill="black" />
                     </svg>
-                    <a href="./blog-card.html">назва новини</a>
+                    <a href="./product-card.html">назва товару</a>
                 </div>
                 <div class="grid2">
                     <div class="left">
-                        <h2>назва новини</h2>
-                        <h3>30.04</h3>
+                        <h2>назва товару</h2>
+
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -151,9 +146,68 @@ justify-content: center;">
                             pariatur. Excepteur sint
                             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                             laborum.</p>
+                        <div class="gallery gallery_mob">
+                            <div class="thumbnails">
+                                <img src="./img/gal1.png" alt="Фото 1" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/gal2.png" alt="Фото 2" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 3" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog1.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog3.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/gal3.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                            </div>
+                            <div class="main-image">
+                                <img src="./img/gal3.png" alt="Велике фото" id="largeImage">
+                            </div>
+                        </div>
+                        <form action="" class=" form_contact" id="form_product">
+                            <h4>Напишіть нам</h4>
+                            <div class="box">
+                                <div class="input">
+                                    <label for="name">Прізвище та ім’я</label>
+                                    <input type="text" required placeholder="Введіть ваше прізвище та ім’я">
+                                </div>
+                                <div class="input">
+                                    <label for="name">Пошта</label>
+                                    <input type="email" required placeholder="Введіть вашу електронну пошту">
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="input">
+                                    <label for="name">Номер телефону</label>
+                                    <input type="tel" required placeholder="Введіть ваш номер телефону">
+                                </div>
+                                <div class="input">
+                                    <label for="name">Звернення</label>
+                                    <input type="text" required placeholder="Введіть ваше звернення">
+                                </div>
+                            </div>
+                            <button class="sub_work btn" type="submit">Зберегти та відправити</button>
+                        </form>
                     </div>
-                    <div class="photo">
-                        <img src="./img/gal1.png" alt="photo blog">
+                    <div class="right">
+                        <div class="gallery gallery_desk">
+                            <div class="thumbnails">
+                                <img src="./img/gal1.png" alt="Фото 1" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/gal2.png" alt="Фото 2" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 3" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog1.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog3.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/gal3.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                                <img src="./img/blog2.png" alt="Фото 4" class="thumbnail" onclick="changeImage(this)">
+                            </div>
+                            <div class="main-image">
+                                <img src="./img/gal3.png" alt="Велике фото" id="largeImage">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,7 +316,12 @@ justify-content: center;">
     </footer>
 
     <script src="./js/script.js"></script>
-
+    <script>
+        function changeImage(thumbnail) {
+            const largeImage = document.getElementById('largeImage');
+            largeImage.src = thumbnail.src.replace('small', 'large');
+        }
+    </script>
 
 
 </body>
