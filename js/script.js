@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burgerIcon = document.querySelector('.burger__icon');
     const burgerMenu = document.querySelector('.burger__menu');
+    const burgerMenuLinks = document.querySelectorAll('.burger__menu .header__link');
 
     if (burgerIcon && burgerMenu) {
         burgerIcon.addEventListener('click', () => {
@@ -17,8 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.style.overflow = '';
             }
         });
+
+
+        burgerMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burgerIcon.classList.remove('active');
+                burgerMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
     }
 });
+
 
 
 // lang

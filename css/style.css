@@ -2159,6 +2159,9 @@ footer {
   .product_card form .box {
     flex-direction: column;
   }
+  .box_gap {
+    flex-direction: row !important;
+  }
 }
 @media (max-width: 550px) {
   .product_card .thumbnails {
@@ -2229,5 +2232,8 @@ footer {
   .product_card form {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  .file-upload {
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
