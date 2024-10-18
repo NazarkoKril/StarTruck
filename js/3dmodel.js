@@ -11,14 +11,15 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('modelContainer').appendChild(renderer.domElement);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    const ambientLight = new THREE.AmbientLight(0xffd7b5, 2);
     scene.add(ambientLight);
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+
+    const directionalLight = new THREE.DirectionalLight(0xffcc99, 5);
     directionalLight.position.set(5, 5, 5);
     scene.add(directionalLight);
-    const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1);
-    scene.add(hemisphereLight);
 
+    const hemisphereLight = new THREE.HemisphereLight(0xffe6cc, 0x444444, 1);
+    scene.add(hemisphereLight);
     const loader = new THREE.GLTFLoader();
     loader.load(
         './3dmodel/scene.gltf',
