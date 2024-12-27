@@ -158,7 +158,6 @@
                 <h2 class="title">Наші Послуги</h2>
                 <div class="grid2">
                     <div class="gridl">
-                        <div id="modelContainer"></div>
                         <img src="./img/truck.png" alt="photo truck" class="truck">
                     </div>
                     <div class="gridr">
@@ -557,30 +556,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/index.js"></script>
-    <script>
-        if (window.innerWidth > 820) {
-
-            var scriptThree = document.createElement('script');
-            scriptThree.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
-            scriptThree.onload = function () {
-
-                var scriptGLTF = document.createElement('script');
-                scriptGLTF.src = 'https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js';
-                document.head.appendChild(scriptGLTF);
-
-
-                scriptGLTF.onload = function () {
-                    var scriptModel = document.createElement('script');
-                    scriptModel.src = './js/3dmodel.js';
-                    document.head.appendChild(scriptModel);
-                };
-            };
-
-            document.head.appendChild(scriptThree);
-        }
-    </script>
-
-
 </body>
 
 </html>

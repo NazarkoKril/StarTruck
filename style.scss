@@ -1160,9 +1160,7 @@ footer {
     }
   }
 }
-.truck {
-  display: none;
-}
+
 .link {
   display: flex;
   align-items: center;
@@ -1865,6 +1863,13 @@ footer {
 .filt3 {
   margin-left: 40px;
 }
+.truck {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  user-select: none;
+  pointer-events: none;
+}
 .product_card {
   .grid2 {
     grid-template-columns: 1.5fr 1fr;
@@ -2099,11 +2104,6 @@ footer {
   }
 }
 @media (max-width: 820px) {
-  .truck {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
   #modelContainer {
     display: none !important;
   }
